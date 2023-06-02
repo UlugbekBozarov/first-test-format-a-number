@@ -1,7 +1,7 @@
 function formatToNumber(number, decimalCount = 3, type = "round", fixed = 6) {
   return Number(
     Math[type](
-      Number(number)?.toFixed(Math.max(fixed, decimalCount + 2)) *
+      Number(Number(number)?.toFixed(Math.max(fixed, decimalCount + 2))) *
         Math.pow(10, decimalCount)
     ) / Math.pow(10, decimalCount)
   );
