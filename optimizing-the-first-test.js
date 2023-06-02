@@ -51,7 +51,7 @@ function describe(callbackFunction) {
       );
     }
   }
-  console.log(errors);
+  console.error(errors);
 }
 
 describe(formatToNumber);
